@@ -9,13 +9,13 @@ _Click [here](https://github.com/SnailMath/CPvid/releases) to download the progr
 This was inspired by the hollyhock projeckt from The6P4C.
 
 ## What is CPvid?
-The program CPvid.hhk plays back videos on the Classpad 2. The videos need to be in a specific format.
+The program CPvid.bin plays back videos on the Classpad 2/fx-CP400. The videos need to be converted to a specific format.
 There are two formats available. The 565-format and the 256-format. In the 565 format there are all 65536 colors available. In the 256-format, only 256 colors are used. The 256-format uses half as much storage than the 565-format.
 See 'converting videos' for a turorial on how to convert your own videos to these formats.
 
 ## Playing videos
 - You need to have hollyhock-2 installed (or hollyhock).
-- place CPvid.hhk on the storage of the calculator. (run `make` in the folder CPvid or download the released file from the .zip file [here](https://github.com/SnailMath/CPvid/releases))
+- place CPvid.bin on the root storage of the calculator. (run `make` in the folder CPvid or download the released .bin file from the .zip file [here](https://github.com/SnailMath/CPvid/releases))
 - Convert a video or use the example from the .zip file
 - Place the folder with the files of the video onto the root of the calculator. (In case of the example eiter `example256` or `example565`)
 - When the file transfer is finished, disconnect the calculator from the pc (click eject first) and open hollyhock 
@@ -30,11 +30,12 @@ See 'converting videos' for a turorial on how to convert your own videos to thes
 ## converting videos
 - download [stb_image.h](https://github.com/nothings/stb/blob/master/stb_image.h) into the folder convert/ (click on raw, right click, save as)
 - run `make` in the folder convert/ 
-- You need the video you want in any file format, for example in .mp4 format.
-- place the video in the folder convert/video/tamplate/ (copy and rename this folder for multiple videos)
-- open convert.sh in a text editor and change the filename in the line `infile=`
-- you can also change the other six options in the following lines
-- run `./convert.sh` in the folder convert/video/template (or how you have renamed it)
+- You need the video you want in any file format, for example in .mp4 or .mov format.
+- download the template file convert.sh [here](https://github.com/SnailMath/CPvid/blob/main/convert/video/template/convert.sh)
+- open convert.sh in a text editor and change the filename in the line `infile=` to reflect your file's location and the name.
+- you can also change the other six options in the following lines for more configuration suh as output file name and video description.
+- you can set the quality of the video using the option `color=` ,1 for lowest and two for highest.
+- run your modified convert.sh file or run `./convert.sh` in the same folder as your video
 - you have the folder template565 and/or template256 (depending on what you set as `color=` in convert.sh) 
 - (To use sound, convert your audio to 11025 samples/sec 8bit .wav and place the file audio.wav into that folder.)
 - see `playing videos` on how to play the video.
