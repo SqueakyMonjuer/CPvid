@@ -27,7 +27,7 @@ See 'converting videos' for a turorial on how to convert your own videos to thes
 
 (You can download a longer example [here in the folder 'stuff'](https://drive.google.com/drive/u/0/folders/1T42uvVZ3Ps-bAghsFQeWIDF85kpocLed), passwd: `123456`)
 
-## converting videos
+## Converting videos
 - You will need ffmpeg for this. Run sudo apt install ffmpeg to install.
 - Download [stb_image.h](https://github.com/nothings/stb/blob/master/stb_image.h) into the folder convert/ (click on the download as raw button when viewing in git)
 - Run `make` in the folder convert/ 
