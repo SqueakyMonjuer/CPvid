@@ -32,7 +32,7 @@ See 'converting videos' for a turorial on how to convert your own videos to thes
 - Download [stb_image.h](https://github.com/nothings/stb/blob/master/stb_image.h) into the folder convert/ (click on the download as raw button when viewing in git)
 - Run `make` in the folder convert/ 
 - You need the video you want in any file format, for example in .mp4 or .mov format.
-- Download the template file convert.sh [here](https://github.com/SnailMath/CPvid/blob/main/convert/video/template/convert.sh)
+- Download the template file convert.sh [here](https://github.com/SnailMath/CPvid/blob/main/convert.sh) for linux and the .bat [here](https://github.com/SnailMath/CPvid/blob/main/convert.bat) for windows
 - Open convert.sh in a text editor and change the filename in the line `infile=` to reflect your file's location and the name.
 - You can also change the other six options in the following lines for more configuration including output file name, video orientation, quality, video discription and the name as shown in calc.
 - You can set the quality of the video using the option `color=`, 1 for lowest and 2 for highest.
